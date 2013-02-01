@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="parameters"
+		label="JOVERRIDER_CONFIG_CONFIGURATION"
+		description="JOVERRIDER_CONFIG_COMPONENT_CONFIGURATION"
+		>
+		<!-- hack -->
+		<field name="load_jquery" type="radio" default="1" label="Load Jquery library in Backend?" description="">
+		  <option value="0">JNO</option>
+		  <option value="1">JYES</option>
+		</field>
+		<field name="use_log" type="radio" default="1" label="Use Log feature?" description="if actived, it will be created a log for each task performed by Joverrider, it's useful for debugging.">
+		  <option value="0">JNO</option>
+		  <option value="1">JYES</option>
+		</field>		
+		<!-- hack -->
+	</fieldset>
+
+	<fieldset
+		name="permissions"
+		label="JOVERRIDER_CONFIG_PERMISSIONS"
+		description="JOVERRIDER_CONFIG_DEFAULT_PERMISSIONS_USED_FOR_ALL_CONTENT_IN_THIS_COMPONENT"
+		>
+		<field
+			name="rules"
+			type="rules"
+			label="JOVERRIDER_CONFIG_COMPONENT_PERMISSIONS"
+			filter="rules"
+			validate="rules"
+			component="com_joverrider"
+			section="component">
+
+
+
+		</field>
+	</fieldset>
+
+
+</config>
